@@ -32,5 +32,5 @@ jobs:
             cd cd_assignment
             git init
             git pull origin main
-            sudo -S systemctl restart farm.service
-            sudo -S systemctl status farm.service
+            sudo systemctl restart farm.service
+            sudo systemctl status farm.service
