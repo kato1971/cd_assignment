@@ -31,6 +31,6 @@ jobs:
             cd winc-assignments
             cd cd_assignment
             git init
-            git pull origin main --allow-unrelated-histories
+            git pull origin main --rebase
             sudo systemctl restart farm.service
             sudo systemctl status farm.service
