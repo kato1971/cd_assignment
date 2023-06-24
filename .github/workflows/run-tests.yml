@@ -30,8 +30,7 @@ jobs:
           script: |
             cd winc-assignments
             cd cd_assignment
-            git init
+            git clean -f -d
             git pull origin main
-            git push origin main
             sudo systemctl restart farm.service
             sudo systemctl status farm.service
