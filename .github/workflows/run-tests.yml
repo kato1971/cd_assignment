@@ -30,6 +30,6 @@ jobs:
           script: |
             cd winc-assignments
             cd cd_assignment
-            git pull origin main
+            git pull main
             sudo systemctl restart farm.service
             sudo systemctl status farm.service
