@@ -29,6 +29,7 @@ jobs:
           port: ${{secrets.SSH_PORT}}
           script: |
             cd winc-assignments/cd_assignment
+            git reset --hard
             git pull origin main
             sudo systemctl restart farm.service
             sudo systemctl status farm.service
